@@ -20,6 +20,7 @@ TOP OF LIST:
 w starrer survey
 
 * json-triple-quote -- what can be done here?
+* -l/-L?
 
 * tools/perf:
   o https://eng.uber.com/pprof-go-profiler/
