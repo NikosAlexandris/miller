@@ -318,8 +318,8 @@ func fmtnum_bs(input1, input2 *Mlrval) *Mlrval {
 var fmtnum_dispositions = [MT_DIM][MT_DIM]BinaryFunc{
 	//       .  ERROR   ABSENT NULL   VOID   STRING     INT    FLOAT  BOOL   ARRAY  MAP
 	/*ERROR  */ {_erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro},
-	/*ABSENT */ {_erro, _absn, _erro, _erro, _absn, _erro, _erro, _erro, _erro, _erro},
-	/*NULL   */ {_erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro},
+	/*ABSENT */ {_erro, _absn, _absn, _absn, _absn, _absn, _absn, _erro, _erro, _erro},
+	/*NULL   */ {_erro, _absn, _erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro},
 	/*VOID   */ {_erro, _absn, _erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro},
 	/*STRING */ {_erro, _absn, _erro, _erro, _erro, _erro, _erro, _erro, _erro, _erro},
 	/*INT    */ {_erro, _absn, _erro, _erro, fmtnum_is, _erro, _erro, _erro, _erro, _erro},

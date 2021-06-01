@@ -1,7 +1,7 @@
 ================================================================
 TOP OF LIST:
 
-* emit * regex * fmtnum * cli-audits *
+* emit * regex * fmtnum * localtime * cli-audits *
 
 ! check issues
 
@@ -79,6 +79,19 @@ w starrer survey
   bdiouxDOUX fegFEG s
 
   post-stuff
+
+* callsites:
+  o fmtnum($mv, "%d")
+    - numeric only
+  o --ofmt
+    - numeric only
+  o format-values verb
+    - -i, -f, -s
+
+* pieces:
+  o given user-level format string
+  o factory-something to make methods which take a mlrval/type & a Go-internal format string
+  o methods which take a mlrval/type & a Go-internal format string
 
 ----------------------------------------------------------------
 
